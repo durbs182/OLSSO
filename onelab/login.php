@@ -3,7 +3,7 @@
 // in case this is called directly if the access_token exists redirect start.php
 include_once 'checkfortoken.php';
 
-$callbackUri = 'https://localhost/token/ccp/onelab/formcallback.php';
+$callbackUri = 'https://onelabauth.azurewebsites.net/onelab/formcallback.php';
 
 
 $authorizationUri = 'https://ctxidentity.azurewebsites.net/identity/connect/authorize';
