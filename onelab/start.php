@@ -16,7 +16,7 @@ var_dump($atJwt);
     <title>Login</title>
 </head>
 <body>
-<h2>JWT</h2>
+<h2>ID Token</h2>
 
 <p>
 <?php echo"name: $jwt->name"; ?>
@@ -29,6 +29,11 @@ var_dump($atJwt);
 </p>
 <p>
 <?php echo"department: $jwt->department"; ?>
+</p>
+
+<h2>Access Token</h2>
+<p>
+<?php echo"$_SESSION['access_token']"; ?>
 </p>
 
 </body>
