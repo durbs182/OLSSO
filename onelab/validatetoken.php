@@ -7,6 +7,16 @@ function redirect($redirectpage)
 	die('redirect');
 }
 
+function getAccessTokenJwt()
+{
+	session_start();
+	$key_public = openssl_get_publickey(file_get_contents('auth_server_public_key.cer'));
+	$access_token = $_SESSION['access_token'];
+	$jwt = JWT::decode($access_token,$key_public ,true);
+	session_destroy();
+	return $jwt;
+}
+
 function validatetoken($redirectpage) 
 {
 	session_start();
@@ -23,7 +33,6 @@ function validatetoken($redirectpage)
 		try
 		{
 			$key_public = openssl_get_publickey(file_get_contents('auth_server_public_key.cer'));
-			//$key_public = openssl_get_publickey(file_get_contents('test.cer'));
 			
 			$jwt = JWT::decode($id_token,$key_public ,true);
 			

@@ -4,7 +4,9 @@ include_once 'validatetoken.php';
 
 $jwt = validatetoken("login.php");
 
+$atJwt = getAccessTokenJwt();
 
+var_dump($atJwt);
 
 ?>
 
