@@ -67,11 +67,8 @@ if($id_token != "")
 		$at_jwt = JWT::decode($access_token, $key_public ,true);
 		
 		$_SESSION['access_token']=$access_token;
-		
-		var_dump($at_jwt);
-		die("");
 	}
-    
+	
 	// return start.php to call
 	header('Location: ' . $start,true,302);
 	die($start);
