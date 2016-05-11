@@ -4,7 +4,7 @@ include_once 'validatetoken.php';
 
 $jwt = validatetoken("login.php");
 
-var_dump($jwt);
+
 
 ?>
 
@@ -16,7 +16,7 @@ var_dump($jwt);
 <body>
 <h2>JWT</h2>
 <p>
-<?php echo "test 123"; ?>
+<?php var_dump($jwt); ?>
 </p>
 </body>
 </html>
