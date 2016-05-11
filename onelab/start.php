@@ -19,11 +19,9 @@ $jwt = validatetoken("login.php");
 <?php var_dump($jwt); ?>
 </p>
 <p>
-ownerid: <?php=$jwt->ownerid; ?>
+<?php echo"ownerid: $jwt->ownerid"; ?>
 </p>
-<p>
-domainuserid: <?php=$jwt->domainuserid; ?>
-</p>
+
 </body>
 </html>
 
