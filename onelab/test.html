@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+	
+	function getCookie(cname) {
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0; i<ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1);
+			if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+		}
+		return null;
+	}
+	
+	function onLogoutCallback() {
+		g_loginResponse = null; //clear single signon variable g_loginResponse
+		var val = getCookie('sso');
+		
+		if(val !== null)
+		{
+			//alert("sso");
+			var uri_dec = decodeURIComponent(val);
+			//alert(uri_dec);
+			window.location.replace(uri_dec);
+			return false;
+		}
+		else
+		{
+			alert("direct");
+			return true;
+		}
+		
+
+		 // return true means the login page will show
+		/*
+		window.location.replace("http://www.google.com"); //redirect to a different location
+	  return false;	//return false means it will stay in the location window.location.replace() sets it to (i.e. "http://www.google.com")
+		*/
+	}
+		
+	onLogoutCallback();
+	
+	</script>
+</body>
+</html>
