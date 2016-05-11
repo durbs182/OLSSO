@@ -26,9 +26,6 @@ $jwt = validatetoken("login.php");
 <?php echo"domainuserid: $jwt->domainuserid"; ?>
 </p>
 <p>
-<?php echo"domainuserid: $jwt->domainuserid"; ?>
-</p>
-<p>
 <?php echo"department: $jwt->department"; ?>
 </p>
 
