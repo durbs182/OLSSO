@@ -6,6 +6,8 @@ $jwt = validatetoken("login.php");
 
 $atJwt = getAccessTokenJwt();
 
+$at = $_SESSION['access_token'];
+
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +33,7 @@ $atJwt = getAccessTokenJwt();
 
 <h2>Access Token</h2>
 <p>
-<?php echo"$_SESSION['access_token']"; ?>
+<?php echo"$at"; ?>
 </p>
 
 </body>
