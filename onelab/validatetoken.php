@@ -20,8 +20,6 @@ function validatetoken($redirectpage)
 		
 		$id_token = $_SESSION['id_token'];
 		
-		
-		
 		try
 		{
 			$key_public = openssl_get_publickey(file_get_contents('auth_server_public_key.cer'));
@@ -29,8 +27,8 @@ function validatetoken($redirectpage)
 			
 			$jwt = JWT::decode($id_token,$key_public ,true);
 			
-			var_dump($jwt);
-			die("");
+			//var_dump($jwt);
+			//die("");
 			return $jwt;
 		}
 		catch(Exception $e)
