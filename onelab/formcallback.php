@@ -68,7 +68,7 @@ if($id_token != "")
 		
 		$_SESSION['access_token']=$access_token;
 		
-		var_dump($at_jwt
+		var_dump($at_jwt);
 		die("");
 	}
     
