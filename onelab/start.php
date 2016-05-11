@@ -15,11 +15,21 @@ $jwt = validatetoken("login.php");
 </head>
 <body>
 <h2>JWT</h2>
+
 <p>
-<?php var_dump($jwt); ?>
+<?php echo"name: $jwt->name"; ?>
 </p>
 <p>
 <?php echo"ownerid: $jwt->ownerid"; ?>
+</p>
+<p>
+<?php echo"domainuserid: $jwt->domainuserid"; ?>
+</p>
+<p>
+<?php echo"domainuserid: $jwt->domainuserid"; ?>
+</p>
+<p>
+<?php echo"department: $jwt->department"; ?>
 </p>
 
 </body>
