@@ -4,6 +4,8 @@ include_once 'validatetoken.php';
 
 $jwt = validatetoken("login.php");
 
+var_dump($jwt);
+
 ?>
 
 <!DOCTYPE html>
