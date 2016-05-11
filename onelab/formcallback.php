@@ -22,14 +22,17 @@ ini_set('display_errors', 'On');
 
 $id_token = $access_token = $state = "";
 
+echo "test 123";
+
+ var_dump($_POST);
+  die("");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $id_token = test_input($_POST["id_token"]);
   $access_token = test_input($_POST["access_token"]);
   $state = test_input($_POST["state"]);
   
-  var_dump($_POST);
-  die("");
+ 
 }
 
 

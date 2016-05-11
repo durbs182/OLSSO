@@ -11,14 +11,14 @@ function redirect($redirectpage)
 
 function getAccessTokenJwt()
 {
-	if (isset($_SESSION['access_token']))
-	{
-		$key_public = openssl_get_publickey(file_get_contents('auth_server_public_key.cer'));
-		$access_token = $_SESSION['access_token'];
-		$jwt = JWT::decode($access_token,$key_public ,true);
+	//if (isset($_SESSION['access_token']))
+	//{
+		//$key_public = openssl_get_publickey(file_get_contents('auth_server_public_key.cer'));
+		//$access_token = $_SESSION['access_token'];
+		//$jwt = JWT::decode($access_token,$key_public ,true);
 		
-		return $jwt;
-	}
+		//return $jwt;
+	//}
 	
 	return null;
 }
