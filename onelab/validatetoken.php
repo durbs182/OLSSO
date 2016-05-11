@@ -11,9 +11,6 @@ function redirect($redirectpage)
 
 function getAccessTokenJwt()
 {
-	var_dump($_SESSION);
-	die("");
-	
 	if (isset($_SESSION['access_token']))
 	{
 		$key_public = openssl_get_publickey(file_get_contents('auth_server_public_key.cer'));
