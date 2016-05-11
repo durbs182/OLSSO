@@ -16,7 +16,7 @@ var_dump($jwt);
 <body>
 <h2>JWT</h2>
 <p>
-<?php echo $jwt; ?>
+<?php echo "test 123"; ?>
 </p>
 </body>
 </html>
