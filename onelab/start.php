@@ -6,8 +6,6 @@ $jwt = validatetoken("login.php");
 
 $atJwt = getAccessTokenJwt();
 
-var_dump($atJwt);
-
 ?>
 
 <!DOCTYPE html>
