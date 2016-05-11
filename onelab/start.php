@@ -18,6 +18,12 @@ $jwt = validatetoken("login.php");
 <p>
 <?php var_dump($jwt); ?>
 </p>
+<p>
+ownerid: <?php=$jwt->ownerid; ?>
+</p>
+<p>
+domainuserid: <?php=$jwt->domainuserid; ?>
+</p>
 </body>
 </html>
 
