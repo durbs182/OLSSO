@@ -25,9 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $id_token = test_input($_POST["id_token"]);
   $access_token = test_input($_POST["access_token"]);
   $state = test_input($_POST["state"]);
-  echo "test 123";
-  var_dump($access_token);
-  die("");
 }
 
 
@@ -67,9 +64,12 @@ if($id_token != "")
 	
 	if($access_token != "")
 	{
-		$ac_jwt = JWT::decode($access_token, $key_public ,true);
+		$at_jwt = JWT::decode($access_token, $key_public ,true);
 		
 		$_SESSION['access_token']=$access_token;
+		
+		var_dump($at_jwt
+		die("");
 	}
     
 	// return start.php to call
