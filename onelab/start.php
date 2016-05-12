@@ -7,6 +7,7 @@ $jwt = validatetoken("login.php");
 $atJwt = getAccessTokenJwt();
 
 $at = $_SESSION['access_token'];
+$it = $_SESSION['id_token'];
 
 ?>
 
@@ -29,6 +30,10 @@ $at = $_SESSION['access_token'];
 </p>
 <p>
 <?php echo"department: $jwt->department"; ?>
+</p>
+
+<p>
+<?php echo"$it"; ?>
 </p>
 
 <h2>Access Token</h2>
