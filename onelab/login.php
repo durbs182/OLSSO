@@ -9,6 +9,12 @@ $callbackUri = 'https://onelabauth.azurewebsites.net/onelab/formcallback.php';
 $authorizationUri = 'https://ctxidentity.azurewebsites.net/identity/connect/authorize';
 
 
+$json = file_get_contents("https://ctxidentity.azurewebsites.net/identity/.well-known/jwks");
+
+$identconfig = json_decode($json);
+
+var_dump($identconfig );
+die("");
 
 session_start();
 
