@@ -23,13 +23,19 @@ $it = $_SESSION['id_token'];
 <?php echo"name: $jwt->name"; ?>
 </p>
 <p>
-<?php echo"ownerid: $jwt->ownerid"; ?>
+<?php echo"email: $jwt->email"; ?>
 </p>
 <p>
 <?php echo"domainuserid: $jwt->domainuserid"; ?>
 </p>
 <p>
-<?php echo"department: $jwt->department"; ?>
+<?php echo"location: $jwt->location"; ?>
+</p>
+<p>
+<?php echo"country: $jwt->country"; ?>
+</p>
+<p>
+<?php echo"employeeNumber: $jwt->employeeNumber"; ?>
 </p>
 
 <p>
