@@ -25,7 +25,7 @@ function validatetoken($token)
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $access_token = test_input($_POST["access_token"]);
+  $access_token = $_POST["access_token"];
   
   $jwt = validatetoken($access_token);
   
