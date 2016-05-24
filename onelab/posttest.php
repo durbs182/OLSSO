@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   $jwt = validatetoken($access_token);
   
-  echo $jwt->email;
+  echo $jwt->ownerid;
 }
 
 
