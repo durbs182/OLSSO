@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   $jwt = validatetoken($access_token);
   
-  echo"employeeNumber: $jwt->employeeNumber";
+  echo $jwt;
 }
 
 
