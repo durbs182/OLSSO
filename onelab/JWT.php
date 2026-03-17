@@ -36,7 +36,7 @@ class JWT
      * @uses jsonDecode
      * @uses urlsafeB64Decode
      */
-    public static function decode($jwt, $key = null, $verify = true)
+    public static function decod($jwt, $key = null, $verify = true)
     {
         $tks = explode('.', $jwt);
         if (count($tks) != 3) {
