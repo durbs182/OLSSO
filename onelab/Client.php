@@ -1,6 +1,6 @@
 <?php
 /**
- * Note : Code is released under the GNU LGPL.
+ * Note : Code is released under the GNU LGPL
  *
  * Please do not change the header of this file
  *
