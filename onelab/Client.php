@@ -26,7 +26,7 @@
  */
 namespace OAuth2;
 
-class Client
+class Clien
 {
     /**
      * Different AUTH method
